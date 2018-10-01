@@ -14,7 +14,15 @@ $(document).ready(function()
         var longitude = data['longitude'];
         var flag = data['location']['country_flag'];
         
-        var output = "You are currently in " + city + ", " + state + " " + zip + ", " +
+        city = (city === null) ? "" : (city + ", ");
+        state = (state === null) ? "" : (state + " ");
+        country = (country === null) ? "" : country;
+        zip = (zip === null) ? "" : (zip + ", ");
+        latitude = (latitude === null) ? "" : latitude;
+        longitude = (longitude === null) ? "" : longitude;
+        flag = (flag === null) ? "" : flag;
+        
+        var output = "You are currently in " + city + state + zip +
         country + " Latitude: " + latitude + " Longitude: " + longitude;
         
         $("#userInfo").html(output);
@@ -41,7 +49,15 @@ $(document).ready(function()
             var longitude = data['longitude'];
             var flag = data['location']['country_flag'];
             
-            var output = "This server is being hosted in " + city + ", " + state + " " + zip + ", " +
+            city = (city === null) ? "" : (city + ", ");
+            state = (state === null) ? "" : (state + " ");
+            country = (country === null) ? "" : country;
+            zip = (zip === null) ? "" : (zip + ", ");
+            latitude = (latitude === null) ? "" : latitude;
+            longitude = (longitude === null) ? "" : longitude;
+            flag = (flag === null) ? "" : flag;
+            
+            var output = "This server is being hosted in " + city + state + zip +
             country + " Latitude: " + latitude + " Longitude: " + longitude;
             
             $("#awsIPinfo").html(output);
