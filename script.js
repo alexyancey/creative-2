@@ -1,7 +1,5 @@
 var url = "http://api.ipstack.com/check?access_key=24578be4e2001fd8c4b7877ae8963ded";
-
-var googleAPI="AIzaSyCVijDuPyI5oyNin-wH7wpuXRBdRSxXtkQ";
-var url2 = "https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyCVijDuPyI5oyNin-wH7wpuXRBdRSxXtkQ";
+var url2 = "http://api.ipstack.com/52.25.212.185?access_key=24578be4e2001fd8c4b7877ae8963ded";
 
 $(document).ready(function()
 {
