@@ -19,6 +19,8 @@ $(document).ready(function()
         
         $("#userInfo").html(output);
         $("#flag").attr("src", flag);
+        $("#flag").attr("width", "350");
+        $("#flag").attr("height", "200");
         
         console.log(output);
     });
@@ -39,11 +41,13 @@ $(document).ready(function()
             var longitude = data['longitude'];
             var flag = data['location']['country_flag'];
             
-            var output = "Your AWS server is being hosted in " + city + ", " + state + " " + zip + ", " +
+            var output = "This server is being hosted in " + city + ", " + state + " " + zip + ", " +
             country + " Latitude: " + latitude + " Longitude: " + longitude;
             
             $("#awsIPinfo").html(output);
             $("#flag2").attr("src", flag);
+            $("#flag2").attr("width", "350");
+            $("#flag2").attr("height", "200");
             
             console.log(output);
         });
