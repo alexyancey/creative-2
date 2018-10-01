@@ -17,6 +17,10 @@ $(document).ready(function()
         
         var output = "You are currently in " + city + ", " + state + " " + zip + ", " +
         country + " Latitude: " + latitude + " Longitude: " + longitude;
+        
+        $("#userInfo").html(output);
+        $("#flag").attr("src", flag);
+        
         console.log(output);
     });
     $.getJSON(url2, function(data)
@@ -32,6 +36,8 @@ $(document).ready(function()
         
         var output = "Your AWS server is being hosted in " + city + ", " + state + " " + zip + ", " +
         country + " Latitude: " + latitude + " Longitude: " + longitude;
+        
+        $("#awsIPinfo").html(output);
         console.log(output);
     });
 });
