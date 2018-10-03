@@ -12,3 +12,9 @@ h2 {
 #headerImg {
     width: 100%;
 }
+
+#awsIPinfo, #userInfo {
+    font-family: sans-serif;
+    font-size: large;
+    font-style: italic;
+}
