@@ -1,10 +1,8 @@
-header {
-    background-image: url("world map.jpg");
-}
-
 body {
     background-color: lightblue;
     text-align: center;
+    background-image: url("world map.jpg");
+    background-position: top;
 }
 
 h2 {
